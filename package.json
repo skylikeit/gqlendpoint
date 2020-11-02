@@ -1,0 +1,23 @@
+{
+  "name": "gqlendpoint",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Kira Bamberg <im@kira.agency> (http://kira.agency/)",
+  "devDependencies": {
+    "@types/express": "^4.17.8",
+    "@types/mongoose": "^5.7.37",
+    "@types/node": "^14.14.6",
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "apollo-server": "^2.19.0",
+    "dotenv": "^8.2.0",
+    "graphql": "^15.4.0",
+    "mongoose": "^5.10.11"
+  },
+  "scripts": {
+    "start": "nodemon ./dist/index.js",
+    "dev": "tsc -w"
+  }
+}
