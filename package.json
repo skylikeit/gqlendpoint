@@ -11,10 +11,16 @@
     "nodemon": "^2.0.6"
   },
   "dependencies": {
+    "@hapi/iron": "^6.0.0",
     "apollo-server": "^2.19.0",
+    "bcrypt": "^5.0.0",
+    "cookie": "^0.4.1",
+    "crypto": "^1.0.1",
     "dotenv": "^8.2.0",
     "graphql": "^15.4.0",
-    "mongoose": "^5.10.11"
+    "mongoose": "^5.10.11",
+    "mongoose-plugin-autoinc": "^1.1.9",
+    "uuid": "^8.3.1"
   },
   "scripts": {
     "start": "nodemon ./dist/index.js",
