@@ -12,7 +12,9 @@ export async function setLoginSession(res, session) {
 
   const token = await Iron.seal(obj, TOKEN_SECRET, Iron.defaults);
 
-  setTokenCookie(res, token);
+  console.log(token);
+
+  return token
 }
 
 export async function getLoginSession(req) {

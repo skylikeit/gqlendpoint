@@ -40,8 +40,8 @@ export default {
           id: user.id,
           username: user.username,
         };
-        await setLoginSession(context.res, session);
-        return { user };
+
+        return await setLoginSession(context.res, session);
       }
       throw new UserInputError('Invalid username and password combination');
       // return { errors: ['Invalid username and password combination'] }
